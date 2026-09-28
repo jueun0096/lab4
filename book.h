@@ -20,6 +20,12 @@ namespace KimJueun2649073
         }
 
     public:
+        book ( int d =1, int p =0 ): id{d}, price{p} 
+        {
+            testID();
+            testPrice();
+        }
+
         void input ()
         {
             std::cout << "Enter the book id: ";
@@ -30,12 +36,12 @@ namespace KimJueun2649073
         }
         void setID (int d) { id = d; testID();}
         void setprice (int p) { price = p; testPrice();}
-        void print() 
+        void print() const
         { 
             std::cout << id << ", " << price << " won\n";
         }
-        int getID () {return id;}
-        int getPrice () {return price;}
+        int getID () const {return id;}
+        int getPrice () const {return price;}
     };
 }
 
