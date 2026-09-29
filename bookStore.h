@@ -22,7 +22,7 @@ namespace KimJueun2649073
                 std::cout << " NOT avaliable\n";
         }
         const book& getBook () const { return b; }
-        void setBook (const book& b0) { b = b0;}
+        void setBook (const book& b0) { b = b0; }
     };
 
 }
